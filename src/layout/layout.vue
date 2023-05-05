@@ -20,8 +20,6 @@
           >
             <el-tab-pane label="bookList" name="bookList"></el-tab-pane>
             <el-tab-pane label="myBook" name="myBook"></el-tab-pane>
-            <!-- <el-tab-pane label="Role">Role</el-tab-pane>
-            <el-tab-pane label="Task">Task</el-tab-pane> -->
           </el-tabs>
         </el-aside>
         <el-main>
