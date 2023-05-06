@@ -1,5 +1,11 @@
 <template>
-  <router-view />
+  <div class="home">
+    <router-view />
+  </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.home {
+  color: $TEGreenColor !important ;
+}
+</style>

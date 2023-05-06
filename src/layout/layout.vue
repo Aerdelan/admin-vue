@@ -2,10 +2,11 @@
  * @Author: Aerdelan 1874863790@qq.com
  * @Date: 2023-04-29 22:19:13
  * @LastEditors: Aerdelan 1874863790@qq.com
- * @LastEditTime: 2023-05-04 11:35:35
+ * @LastEditTime: 2023-05-05 13:48:13
  * @FilePath: \vue-admin-template\src\layout\layout.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
+
 <template>
   <div class="common-layout">
     <el-container>
@@ -17,6 +18,7 @@
             style="height: 200px"
             class="demo-tabs"
             @tab-click="active"
+            v-model="bookList"
           >
             <el-tab-pane label="bookList" name="bookList"></el-tab-pane>
             <el-tab-pane label="myBook" name="myBook"></el-tab-pane>
@@ -31,9 +33,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 const router = ref(useRouter());
+const bookList = ref("bookList");
 const active = (name) => {
   console.log(name.props.name);
   if (name.props.name == "bookList") {

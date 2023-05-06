@@ -2,7 +2,7 @@
  * @Author: Aerdelan 1874863790@qq.com
  * @Date: 2023-04-30 10:07:20
  * @LastEditors: Aerdelan 1874863790@qq.com
- * @LastEditTime: 2023-05-04 10:49:01
+ * @LastEditTime: 2023-05-06 15:43:05
  * @FilePath: \vue-admin-template\src\views\login\login.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -57,9 +57,10 @@ const getRegister = () => {
   justify-content: center;
   padding: 1rem;
   width: 30%;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 10%;
-  border: 2px solid rgba(192, 187, 187, 0.9);
+  border: 2px solid $TEGreenColor;
   .from {
     margin: 0 auto;
     display: flex;

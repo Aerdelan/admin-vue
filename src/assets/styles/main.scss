@@ -1,0 +1,13 @@
+// scss变量
+
+// 主题
+$TEGreenColor: #27ba9b;
+$TERedColor:red;
+@mixin primary-color {
+    color: $TEGreenColor;
+  }
+  
+  @mixin secondary-color {
+    color: $TERedColor;
+  }
+// 自定义
