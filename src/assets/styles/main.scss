@@ -3,11 +3,8 @@
 // 主题
 $TEGreenColor: #27ba9b;
 $TERedColor:red;
-@mixin primary-color {
-    color: $TEGreenColor;
-  }
-  
-  @mixin secondary-color {
-    color: $TERedColor;
-  }
+$TEBlueColor:blue;
+$TEBlackColor:black;
+$TEYellowColor:yellow;
+$TEOrangeColor:orange;
 // 自定义
